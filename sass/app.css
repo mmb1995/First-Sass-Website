@@ -1,0 +1,72 @@
+/*
+Error: Illegal nesting: Nothing may be nested beneath variable declarations.
+        on line 11 of sass/_variables.sass
+        from line 1 of sass/app.sass
+
+6: $brand-secondary:     #CD493B
+7: $brand-third:         #CD4B3C
+8: $base-dark:           #212630
+9: $base-light:          #FFFCFC
+10: $base-lighter:        #F6F5F5
+11: 
+12:   /* darker red *\/
+13:   /* dark red *\/
+14:   /* lighter red *\/
+15:   /* almost black *\/
+16:   /* light grey *\/
+
+Backtrace:
+sass/_variables.sass:11
+sass/app.sass:1
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:765:in `parse_variable'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:650:in `parse_line'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:539:in `build_tree'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:558:in `block in append_children'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:557:in `each'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:557:in `append_children'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:417:in `_to_tree'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:321:in `to_tree'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:88:in `block in with_import'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:88:in `with_import'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin.rb:109:in `method_missing'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/exec/base.rb:50:in `parse'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/exec/base.rb:18:in `parse!'
+/Users/mmb36/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.6.0/bin/sass:13:in `<top (required)>'
+/Users/mmb36/.rbenv/versions/2.5.1/bin/sass:23:in `load'
+/Users/mmb36/.rbenv/versions/2.5.1/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Illegal nesting: Nothing may be nested beneath variable declarations.\A         on line 11 of sass/_variables.sass\A         from line 1 of sass/app.sass\A \A 6: $brand-secondary:     #CD493B\A 7: $brand-third:         #CD4B3C\A 8: $base-dark:           #212630\A 9: $base-light:          #FFFCFC\A 10: $base-lighter:        #F6F5F5\A 11: \A 12:   /* darker red */\A 13:   /* dark red */\A 14:   /* lighter red */\A 15:   /* almost black */\A 16:   /* light grey */"; }
